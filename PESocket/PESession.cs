@@ -189,5 +189,14 @@ namespace PENet {
         protected virtual void OnDisConnected() {
             PETool.LogMsg("Session Disconnected.", LogLevel.Info);
         }
+
+        /// <summary>
+        /// 获取当前客户端
+        /// </summary>
+        /// <returns></returns>
+        public Socket GetClientSocket()
+        {
+            return skt;
+        }
     }
 }
