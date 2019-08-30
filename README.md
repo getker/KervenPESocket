@@ -3,11 +3,15 @@
 
 不用过多了解网络通信内部原理，只需几行简单的代码，便能简捷快速开发基于C#语言的服务器和客户端，实现网络通信。
 
+对应的客户端为https://github.com/getker/UnityProj_ToLuaMVC 
+
+客户端支持TOLUA热更新。
+
 # 使用示意：
 
 ### 1.创建Socket服务器
 ``` c#
-PESocket<ClientSession, NetMsg> client = new PESocket<ClientSession, NetMsg>();
+PESocket<ServerSession, NetMsg> client = new PESocket<ServerSession, NetMsg>();
 client.StartAsServer("127.0.0.1", 17666);
 ```
 
