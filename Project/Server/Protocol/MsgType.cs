@@ -13,6 +13,6 @@ namespace Protocol
         BroadcastAll,               // 广播所有
         BroadcastAllWithCurClient,  // 广播所有（除去当前的客户端）
         Store,                      // 存储
-        Default                       // 其他
+        Default                     // 其他
     }
 }
